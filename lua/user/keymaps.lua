@@ -117,7 +117,8 @@ keymap("n", "<C-e>", ":BufferLineCyclePrev<CR>", opts)
 -- Plug Link https://github.com/nvim-telescope/telescope.nvim
 -- XXX
 --
-keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<C-p>", "<cmd>Telescope git_files<cr>", opts)
 keymap("n", "<C-b>", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<Space>gg", "<cmd>Telescope live_grep<cr>", opts)
 -- keymap("n", "<Space>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)

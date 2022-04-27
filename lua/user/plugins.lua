@@ -244,7 +244,7 @@ return packer.startup(function(use)
   }
 
 
-  ---
+  --- gtags
   use {
     'skywind3000/gutentags_plus',
     requires = {
@@ -259,7 +259,17 @@ return packer.startup(function(use)
   }
   -- use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim" -- status line
-  use "goolord/alpha-nvim" -- welcome page
+
+  -- welcome page
+  use {
+    "goolord/alpha-nvim",
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+    config = function ()
+      require'alpha'.setup(require'alpha.themes.startify'.config)
+    end
+  }
   -- use "startup-nvim/startup.nvim"     -- welcome page
 
   -- use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight

@@ -32,4 +32,7 @@ zhenhuli
 
 
 
+例如，在项目根目录下，生成JSON文件，但不编译项目：
 
+1
+$ compiledb -n make
