@@ -79,6 +79,14 @@ return packer.startup(function(use)
   -- colorscheme
   use "morhetz/gruvbox"
 
+  use "rhysd/vim-clang-format"
+
+
+  use "voldikss/vim-floaterm"
+
+
+  use "puremourning/vimspector"
+
 
   use "lewis6991/impatient.nvim" -- Speed up loading Lua modules    TODO: figure out how to use this
   -- My plugins here
@@ -86,7 +94,6 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "rcarriga/nvim-notify" -- notify
-  use "kyazdani42/nvim-web-devicons" -- icons
 
   -- Telescope
   use {
@@ -226,7 +233,26 @@ return packer.startup(function(use)
   }
 
   -- use "folke/tokyonight.nvim"
-  use "kyazdani42/nvim-tree.lua" -- file explore
+
+  -- file explore
+  use {
+    'kyazdani42/nvim-tree.lua',
+    commit = '9937749838216306c173b309dd52abae27387a2f',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    }
+  }
+
+
+  ---
+  use {
+    'skywind3000/gutentags_plus',
+    requires = {
+      'ludovicchabant/vim-gutentags', -- optional, for file icon
+    }
+  }
+
+  
   use {
     "akinsho/bufferline.nvim", -- tab
     tag = "v1.2.0",
@@ -265,7 +291,7 @@ return packer.startup(function(use)
   use "mtdl9/vim-log-highlighting"
   use "Pocco81/HighStr.nvim"
   -- use "dstein64/vim-startuptime"
-  use "ravenxrz/vim-local-history"
+  use "dinhhuy258/vim-local-history"
   -- use "henriquehbr/nvim-startup.lua"
   -- use "AckslD/nvim-neoclip.lua"
   use "vim-test/vim-test"

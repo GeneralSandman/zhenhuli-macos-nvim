@@ -23,7 +23,12 @@ zhenhuli
 - glow        -- markdown预览依赖
 - lazygit     -- git操作
 - rg          -- telescope 依赖
+- gh
 
+
+如果要是 跳转c语言 函数定义、声明 不成功，
+
+首先使用 compiledb 对 makefile 生成 compile_commands.json 文件，http://cattiek.site/2019/03/20/%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90compile-commands-json/
 
 
 
