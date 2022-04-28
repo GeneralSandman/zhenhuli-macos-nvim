@@ -36,3 +36,37 @@ zhenhuli
 
 1
 $ compiledb -n make
+
+
+
+
+
+git clone https://github.com/GeneralSandman/dotfiles
+
+ln -s /Users/zhenhuli/dotfiles/nvim ~/.config/nvim
+
+
+
+rm ~/.config/nvim
+ln -s /Users/zhenhuli/Desktop/dotfiles/nvim ~/.config/nvim
+
+
+rm ~/.config/nvim
+ln -s /Users/zhenhuli/Desktop/zhenhuli-macos-nvim ~/.config/nvim
+
+
+rm ~/.config/nvim
+ln -s /Users/zhenhuli/.SpaceVim ~/.config/nvim
+
+
+
+
+zhenhuli-macos-nvim
+
+
+自动注释的工具
+
+写代码的时候有点卡顿。
+
+
+nvim-tree 如何快速的转移过去

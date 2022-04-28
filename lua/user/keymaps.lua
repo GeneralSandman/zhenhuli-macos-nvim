@@ -93,7 +93,7 @@ vim.cmd(
 -- 文件树
 --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
--- keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
+keymap("n", "<leader>f", ":NvimTreeFocus<cr>", opts)
 --
 -- Plug kyazdani42/nvim-tree.lua end
 
@@ -106,8 +106,8 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- 
 keymap("n", "R", ":BufferLineCycleNext<CR>", opts)
 keymap("n", "E", ":BufferLineCyclePrev<CR>", opts)
-keymap("n", "<C-r>", ":BufferLineCycleNext<CR>", opts)
-keymap("n", "<C-e>", ":BufferLineCyclePrev<CR>", opts)
+-- keymap("n", "<C-r>", ":BufferLineCycleNext<CR>", opts)
+-- keymap("n", "<C-e>", ":BufferLineCyclePrev<CR>", opts)
 --
 -- Plug akinsho/bufferline.nvim end
 
@@ -263,7 +263,9 @@ keymap("n", "<leader>rr", "<cmd>UltestNearest<cr>", opts)
 keymap("n", "<leader>rd", "<cmd>UltestDebugNearest<cr>", opts)
 
 -- comment
-keymap("n", "gcf", "<cmd>Dox<cr>", opts)
+-- keymap("n", "gcf", "<cmd>Dox<cr>", opts)
+keymap("n", "cc", "<cmd>CommentToggle<cr>", opts)
+-- keymap("n", "cl", "<cmd>'<,'>CommentToggle<cr>", opts)
 
 -- sniprun
 keymap("n", "<leader>rf", ":%SnipRun<cr>", opts)
