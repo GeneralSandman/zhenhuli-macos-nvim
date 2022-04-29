@@ -135,15 +135,25 @@ local mappings = {
   },
 
   d = {
-    name = "Debug",
-    R = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run to Cursor" },
-    E = { "<cmd>lua require'dapui'.eval(vim.fn.input '[Expression] > ')<cr>", "Evaluate Input" },
-    X = { "<cmd>lua require'dap'.terminate()<cr>", "Terminate" },
-    -- C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", "Conditional Breakpoint" },
-    T = { "<cmd>lua require'dapui'.toggle('sidebar')<cr>", "Toggle Sidebar" },
-    p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-    r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-    q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
+    name = "Debug Help",
+
+    a = {"", "<F1>: Start or Continue"},
+    b = {"", "<F2>: Toggle Breakpoint"},
+    c = {"", "<F3>: Restart"},
+    d = {"", "<F4>: Quit"},
+    -- b = {"", "<F6>: Load Session"},
+    e = {"", "<F7>: ListBreakpoints"},
+    f = {"", "<F8>: ClearBreakpoints"},
+
+
+    -- R = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run to Cursor" },
+    -- E = { "<cmd>lua require'dapui'.eval(vim.fn.input '[Expression] > ')<cr>", "Evaluate Input" },
+    -- X = { "<cmd>lua require'dap'.terminate()<cr>", "Terminate" },
+    -- -- C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", "Conditional Breakpoint" },
+    -- T = { "<cmd>lua require'dapui'.toggle('sidebar')<cr>", "Toggle Sidebar" },
+    -- p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
+    -- r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
+    -- q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
 
     -- b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
     -- c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },

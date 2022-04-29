@@ -66,6 +66,7 @@ keymap("n", "<F4>", ":call vimspector#Reset() <CR>", opts)
 -- keymap("n", "<F5>", ":call vimspector#Reset() <CR>", opts)
 -- keymap("n", "<F6>", ":call vimspector#Reset() <CR>", opts)
 -- keymap("n", "<F5>", ":call vimspector#Continue() <CR>", opts) -- 在mac下 F5 好像被拦截了，需要使用 Fn+F5
+-- keymap("n", "<F6>", ":VimspectorLoadSession <CR>", opts)
 keymap("n", "<F7>", ":call vimspector#ListBreakpoints() <CR>", opts)
 keymap("n", "<F8>", ":call vimspector#ClearBreakpoints() <CR>", opts)
 --
