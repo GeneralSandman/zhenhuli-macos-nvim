@@ -192,7 +192,7 @@ aerial.setup({
     -- They can be integers or a float between 0 and 1 (e.g. 0.4 for 40%)
     -- min_height and max_height can be a list of mixed types.
     -- min_height = {8, 0.1} means "the greater of 8 rows or 10% of total"
-    max_height = 0.9,
+    max_height = 0.4,
     height = nil,
     min_height = { 8, 0.1 },
 

@@ -79,7 +79,13 @@ return packer.startup(function(use)
   -- colorscheme
   use "morhetz/gruvbox"
 
-  use "rhysd/vim-clang-format"
+  use {
+    'rhysd/vim-clang-format',
+    requires = {
+      'kana/vim-operator-user',
+      'Shougo/vimproc.vim',
+    }
+  }
 
 
   use "voldikss/vim-floaterm"
@@ -263,11 +269,12 @@ return packer.startup(function(use)
   -- welcome page
   use {
     "goolord/alpha-nvim",
+    commit = '665522838e5a5511ec888840b76bc7b9929ee115',
     requires = {
       'kyazdani42/nvim-web-devicons',
     },
     config = function ()
-      require'alpha'.setup(require'alpha.themes.startify'.config)
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
     end
   }
   -- use "startup-nvim/startup.nvim"     -- welcome page

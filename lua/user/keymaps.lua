@@ -23,8 +23,8 @@ vim.g.maplocalleader = ";"
 
 
 -- zhenhuli key mappings
-keymap("i", "jj", "<esc>", opts)
-keymap("i", ";;", "<esc>", opts)
+keymap("i", "JJ", "<esc>", opts)
+-- keymap("i", ";;", "<esc>", opts)
 keymap("i", ",", ",<Space>", opts)
 
 keymap("n", "J", "5j", opts)
@@ -75,14 +75,15 @@ keymap("n", "<F8>", ":call vimspector#ClearBreakpoints() <CR>", opts)
 
 
 -- Plug vim-clang-format
--- Plug Link https://rhysd/vim-clang-format
+-- Plug Link https://github.com/rhysd/vim-clang-format
 -- 代码自动格式化
 --
+-- TODO: 卡顿
 vim.cmd(
 [[
   let g:clang_format#detect_style_file = 1
-  let g:clang_format#auto_format = 1
-  let g:clang_format#auto_format_on_insert_leave = 1
+  let g:clang_format#auto_format = 0
+  let g:clang_format#auto_format_on_insert_leave = 0
 ]])
 --
 -- Plug vim-clang-format end
@@ -99,6 +100,15 @@ keymap("n", "<leader>f", ":NvimTreeFocus<cr>", opts)
 -- Plug kyazdani42/nvim-tree.lua end
 
 
+-- Plug folke/trouble.nvim
+-- Plug Link https://github.com/folke/trouble.nvim
+-- 视图增强
+--
+keymap("n", "<F6>", ":TroubleToggle<cr>", opts) -- fn + F6
+--
+-- Plug folke/trouble.nvim end
+
+
 
 -- Plug akinsho/bufferline.nvim
 -- Plug Link https://github.com/akinsho/bufferline.nvim
@@ -107,8 +117,8 @@ keymap("n", "<leader>f", ":NvimTreeFocus<cr>", opts)
 -- 
 keymap("n", "R", ":BufferLineCycleNext<CR>", opts)
 keymap("n", "E", ":BufferLineCyclePrev<CR>", opts)
--- keymap("n", "<C-r>", ":BufferLineCycleNext<CR>", opts)
--- keymap("n", "<C-e>", ":BufferLineCyclePrev<CR>", opts)
+keymap("n", "<C-r>", ":BufferLineCycleNext<CR>", opts)
+keymap("n", "<C-e>", ":BufferLineCyclePrev<CR>", opts)
 --
 -- Plug akinsho/bufferline.nvim end
 
@@ -139,6 +149,16 @@ keymap("n", "mA", "<cmd>Telescope vim_bookmarks all<cr>", opts)
 --
 --
 -- Plug XXX end
+
+
+-- Plug aerial.nvim
+-- Plug Link https://github.com/stevearc/aerial.nvim
+-- XXX
+--
+keymap("n", "<C-s>", "<cmd>AerialToggle float<cr>", opts)
+keymap("n", "<C-a>", "<cmd>AerialClose <cr>", opts)
+--
+-- Plug aerial.nvim end
 
 
 
