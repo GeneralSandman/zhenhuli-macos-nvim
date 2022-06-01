@@ -5,7 +5,7 @@ if not status_ok then
 end
 
 -- disable startup, because it has conflicts with auto-session plugin
-vim.g.startup_disable_on_startup = true
+vim.g.startup_disable_on_startup = false
 
 startup.setup({
   theme = "startify",

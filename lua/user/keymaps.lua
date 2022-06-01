@@ -298,3 +298,11 @@ vim.cmd(
   nnoremap <leader>s :call search('\w\>', 'c')<CR>a<C-X><C-S>
 ]])
 
+
+vim.cmd(
+[[
+    augroup _vimspector_debug
+      autocmd VimEnter  * silent! :VimspectorLoadSession
+      autocmd VimLeave  * silent! :VimspectorMkSession
+    augroup end
+]])

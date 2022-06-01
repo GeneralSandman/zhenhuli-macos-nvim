@@ -135,7 +135,7 @@ local mappings = {
   },
 
   d = {
-    name = "Debug Help",
+    name = "Vimspector Debug",
 
     a = {"", "<F1>: Start or Continue"},
     b = {"", "<F2>: Toggle Breakpoint"},

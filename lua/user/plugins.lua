@@ -156,7 +156,7 @@ return packer.startup(function(use)
   -- Editor enhance
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "terrortylor/nvim-comment"
-  -- use "rmagatti/auto-session" -- auto restore session(constains layout, window etc..)
+  use "rmagatti/auto-session" -- auto restore session(constains layout, window etc..)
   -- cmp plugins
   use {
     "hrsh7th/nvim-cmp",
